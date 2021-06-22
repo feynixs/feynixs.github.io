@@ -30,6 +30,8 @@ jobs:
         run: echo Hello, world! $(pwd)
       - name: Puts env 
         run: env
+      - name: access rep
+        run: cat $GITHUB_WORKSPACE/_posts/video.md
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
